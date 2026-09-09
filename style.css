@@ -15,6 +15,7 @@
     --bs-btn-border-color: #00ffff !important;
 }
 
+
 .btn-outline-primary:hover{
     --bs-btn-color: #000000 !important;
     --bs-btn-bg: #fff !important;
