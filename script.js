@@ -15,3 +15,21 @@ document.querySelectorAll('.btn').forEach(boton => {
             audioClick.play().catch(error => console.log("Reproducción bloqueada temporalmente"));
         });
     });
+
+document.querySelectorAll('.navbar-nav').forEach(boton => {
+        boton.addEventListener('click', () => {
+            const audioClick = document.getElementById('sonidoClick');
+            audioClick.currentTime = 0; // Reinicia el audio para permitir clics rápidos seguidos
+            audioClick.volume = 0.3;    // Volumen del clic
+            audioClick.play().catch(error => console.log("Reproducción bloqueada temporalmente"));
+        });
+    });
+
+document.querySelectorAll('.navbar-brand').forEach(boton => {
+        boton.addEventListener('click', () => {
+            const audioClick = document.getElementById('sonidoClick');
+            audioClick.currentTime = 0; // Reinicia el audio para permitir clics rápidos seguidos
+            audioClick.volume = 0.3;    // Volumen del clic
+            audioClick.play().catch(error => console.log("Reproducción bloqueada temporalmente"));
+        });
+    });
